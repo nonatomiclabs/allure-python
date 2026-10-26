@@ -46,6 +46,7 @@ class AttachmentType(Enum):
     URI_LIST = ("text/uri-list", "uri")
 
     HTML = ("text/html", "html")
+    MARKDOWN = ("text/markdown", "md")
     XML = ("application/xml", "xml")
     JSON = ("application/json", "json")
     YAML = ("application/yaml", "yaml")
@@ -70,3 +71,8 @@ class ParameterMode(Enum):
     HIDDEN = "hidden"
     MASKED = "masked"
     DEFAULT = None
+
+
+class ErrorStatus(str, Enum):
+    BROKEN = "broken"
+    FAILED = "failed"
